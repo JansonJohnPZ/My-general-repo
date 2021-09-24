@@ -6,11 +6,11 @@
 
 #IncludeRegexTransform: 
 
-../lib/v01.h
+../include/v01.h
 
 D:/git repo/My-general-repo/c++ repo/001/hello world.cpp
 iostream
 -
 v01.h
--
+D:/git repo/My-general-repo/c++ repo/001/v01.h
 

@@ -3,7 +3,7 @@ project(001)
 
 set(CMAKE_CXX_STANDARD 14)
 
-include_directories(lib)
+include_directories(include)
 
 add_executable(001
         "hello world.cpp")
