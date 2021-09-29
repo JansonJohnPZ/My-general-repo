@@ -85,13 +85,16 @@ def find_reverse(o, p):
 
 def main():
 
-    group_size = 136                #137
+    group_size = 22                #23
 
     # array_temp = show_ord_map(group_size)
     # print(array_temp)
 
-    # temp = find_reverse(923, group_size)
+    # temp = find_reverse(22, group_size)
     # print(temp)
+
+    temp_list = ord_of_elem(group_size)
+    print(temp_list)
 
     # temp = find_gen(group_size)
     # print(temp)
