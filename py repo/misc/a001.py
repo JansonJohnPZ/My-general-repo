@@ -1,22 +1,57 @@
 import numpy as np
 
 
+def pow_for_mod(a, b, group_size):
+
+    temp = 1
+    for k in range(b):
+        temp = (temp * a) % (group_size + 1)
+
+    return temp
+
+
+def expand_elem(a, group_size):
+
+    temp_list = []
+    for i in range(group_size):
+        temp = pow_for_mod(a, i+1, group_size)
+        temp_list.append(temp)
+
+    return temp_list
+
+
 def show_ord_map(group_size):
 
     array_temp = np.zeros([group_size, group_size], dtype="float64")
 
     for i in range(group_size):
         for j in range(group_size):
-            array_temp[i, j] = ((i + 1) ** (j + 1)) % (group_size + 1)
+            array_temp[i, j] = pow_for_mod(i+1, j+1, group_size)
 
     return array_temp
 
 
-def find_gen(group_size):
+def ord_of_elem(group_size):
+
     array_temp = show_ord_map(group_size)
     shape_a = array_temp.shape
+
+    temp = []
     for i in range(shape_a[1]):
-        print(i)
+        temp.append(len(set(array_temp[i, :])))
+
+    return temp
+
+
+def find_gen(group_size):
+
+    temp = ord_of_elem(group_size)
+    temp_list = []
+
+    for i in range(group_size):
+        if temp[i] == group_size:
+            temp_list.append(i+1)
+    return temp_list
 
 
 def find_reverse_sub0(o, p, k):
@@ -50,15 +85,20 @@ def find_reverse(o, p):
 
 def main():
 
-    group_size = 12                 #13
+    group_size = 136                #137
 
     # array_temp = show_ord_map(group_size)
     # print(array_temp)
-    #
-    # temp = find_reverse(12, group_size)
+
+    # temp = find_reverse(923, group_size)
     # print(temp)
 
-    find_gen(group_size)
+    # temp = find_gen(group_size)
+    # print(temp)
+
+    # temp_list = expand_elem(51, group_size)
+    # print(len(temp_list))
+    # print(len(set(temp_list)))
 
 
 if __name__ == "__main__":
