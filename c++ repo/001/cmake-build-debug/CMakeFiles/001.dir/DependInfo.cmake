@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "D:/git repo/My-general-repo/c++ repo/001/hello world.cpp" "D:/git repo/My-general-repo/c++ repo/001/cmake-build-debug/CMakeFiles/001.dir/hello_world.cpp.obj"
+  "D:/my git repo/My-general-repo/c++ repo/001/hello world.cpp" "D:/my git repo/My-general-repo/c++ repo/001/cmake-build-debug/CMakeFiles/001.dir/hello_world.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
