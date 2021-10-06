@@ -99,7 +99,8 @@ def main():
     # temp = find_gen(group_size)
     # print(temp)
 
-    # temp_list = expand_elem(51, group_size)
+    # temp_list = expand_elem(15, group_size)
+    # print(temp_list)
     # print(len(temp_list))
     # print(len(set(temp_list)))
 
