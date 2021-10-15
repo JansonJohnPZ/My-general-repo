@@ -2,6 +2,7 @@
 #include "v01.h"
 
 using namespace std;
+using namespace v01;
 
 int main(int argc, char *argv[])
 {

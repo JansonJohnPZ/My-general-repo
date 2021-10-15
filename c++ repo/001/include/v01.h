@@ -1,1 +1,4 @@
-int a = 123;
+namespace v01
+{
+    int a =123;
+}
