@@ -1,3 +1,0 @@
-D:/git repo/My-general-repo/c++ repo/001/cmake-build-debug/CMakeFiles/001.dir
-D:/git repo/My-general-repo/c++ repo/001/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/git repo/My-general-repo/c++ repo/001/cmake-build-debug/CMakeFiles/rebuild_cache.dir
